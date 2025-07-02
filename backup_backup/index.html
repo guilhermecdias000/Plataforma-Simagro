@@ -527,7 +527,7 @@ const legendasMapBiomas = {
     ];
 
     camadas.forEach(cfg => {
-        const urlBase = 'https://71ab-2803-9810-b23e-af10-7804-1905-4a95-ad58.ngrok-free.app/geoserver/ows';
+        const urlBase = 'https://1645-2803-9810-b23e-af10-7804-1905-4a95-ad58.ngrok-free.app/geoserver/ows';
         const params = {
             SERVICE: 'WMS', VERSION: '1.1.1', REQUEST: 'GetFeatureInfo',
             BBOX: bbox, SRS: 'EPSG:4326', WIDTH: width, HEIGHT: height,
@@ -604,7 +604,7 @@ const legendasMapBiomas = {
     const friendlyName = prompt("Nome amigável para a lista:");
     if (!friendlyName) return;
     const layerId = `data-${nextLayerId++}`;
-    const wmsLayer = L.tileLayer.wms('https://71ab-2803-9810-b23e-af10-7804-1905-4a95-ad58.ngrok-free.app/geoserver/ows', {
+    const wmsLayer = L.tileLayer.wms('https://1645-2803-9810-b23e-af10-7804-1905-4a95-ad58.ngrok-free.app/geoserver/ows', {
       layers: layerName, format: 'image/png', transparent: true, attribution: "GeoServer"
     });
     createLayerEntry("dados", friendlyName, layerId, wmsLayer);
@@ -615,7 +615,7 @@ const legendasMapBiomas = {
 
   baseLayers.forEach(cfg => {
     const layerId = `data-${nextLayerId++}`;
-    const wms = L.tileLayer.wms('https://71ab-2803-9810-b23e-af10-7804-1905-4a95-ad58.ngrok-free.app/geoserver/ows', {
+    const wms = L.tileLayer.wms('https://1645-2803-9810-b23e-af10-7804-1905-4a95-ad58.ngrok-free.app/geoserver/ows', {
       layers: cfg.name,
       format: 'image/png',
       transparent: true,

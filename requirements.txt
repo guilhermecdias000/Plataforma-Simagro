@@ -1,0 +1,12 @@
+Flask
+flask-cors
+geopandas
+rasterio
+numpy
+requests
+pyproj
+shapely
+Pillow
+reportlab
+staticmap
+earthengine-api

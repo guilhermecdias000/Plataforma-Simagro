@@ -10,3 +10,4 @@ Pillow
 reportlab
 staticmap
 earthengine-api
+gunicorn

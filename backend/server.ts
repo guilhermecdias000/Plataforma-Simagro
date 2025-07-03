@@ -10,7 +10,7 @@ app.use(express.static('frontend'));  // Serve o HTML/JS do mapa
 
 // Proxy para seu GeoServer via NGROK
 app.use('/geoserver', createProxyMiddleware({
-  target: 'https://seu-endereco.ngrok-free.app',
+  target: 'http://localhost:8080',
   changeOrigin: true,
   pathRewrite: { '^/geoserver': '/geoserver' },
 }));
